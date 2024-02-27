@@ -1,0 +1,29 @@
+GET http://localhost:3000/players/
+###
+
+GET http://localhost:3000/players/6/
+
+###
+
+PUT http://localhost:3000/players/12
+Content-Type: application/json
+
+{
+  "playerName": "Vinay Kumar",
+  "jerseyNumber": 18,
+  "role": "Batsman"
+}
+
+###
+
+PUT http://localhost:3000/players/6
+Content-Type: application/json
+
+{
+  "playerName": "Mahesh",
+  "jerseyNumber": 7,
+  "role": "Batsman"
+}
+
+###
+DELETE http://localhost:3000/players/8
